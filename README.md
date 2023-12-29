@@ -503,7 +503,7 @@ do{
 
 alert(str);
 ```
-
+CodeWars: https://www.codewars.com/users/Meyson172/completed_solutions
 
 <h2 align="center">Вывод</h2>
 В этой лабораторной работе я закрепил полученные знания, а также улучшил свои навыки программирования на JavaScript.
