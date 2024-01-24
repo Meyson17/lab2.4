@@ -1,11 +1,14 @@
-const express = require('express');
-const res = express();
+const express = require("express");
+const app = express();
 
-res.sendFile(path.join(__dirname, '../lab4', 'index1.html')); 
-res.sendFile('index1.html', { root: path.join(__dirname, '../lab4') });
-;
+app.use(express.static(__dirname + "/main"));
 
-app.listen(3000, ()=>{
+app.get("/", function(request, response)
+{
+    response.sendFile("main/index.html");
+});
 
-    console.log('Server online');
+app.listen(3000, function(request, response)
+{
+    console.log("Server online.");
 });
